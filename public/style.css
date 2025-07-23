@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff6f0; /* tono pastel claro */
+  color: #4b2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Encabezado */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d17b88;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Formulario */
+form#login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.75rem;
+  border: 1px solid #e8c4c4;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #b49c9c;
+}
+
+button {
+  background-color: #f6a6b2;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ec8f9f;
+}
+
+/* Botones secundarios */
+#get-profile,
+#logout {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #fff;
+  color: #d17b88;
+  border: 2px solid #f6a6b2;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+#get-profile:hover,
+#logout:hover {
+  background-color: #fde0e4;
+}
+
+/* Output */
+pre#output {
+  margin-top: 1rem;
+  background: #fff;
+  border: 1px dashed #d17b88;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 380px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

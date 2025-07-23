@@ -2,24 +2,30 @@
   "name": "ecommercejs",
   "version": "1.0.0",
   "description": "Proyecto de tienda Ecommerce con backend JS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CarlosRaul04/EcommerceJS.git"
+    "url": "https://github.com/CarlosRaul04/EcommerceJS.git"
   },
   "author": "Carlos Ramirez",
-  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CarlosRaul04/EcommerceJS/issues"
   },
   "homepage": "https://github.com/CarlosRaul04/EcommerceJS#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
